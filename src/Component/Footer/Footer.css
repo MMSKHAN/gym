@@ -1,0 +1,29 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.footer-con{
+    display: flex;
+flex-direction: row;
+font-size: 2rem;
+gap: 2rem;
+color: white;
+/* margin-bottom: 2rem; */
+}
+hr{
+    margin-top: 2rem;
+    height: 0.2rem;
+    /* font-size: 1rem; */
+    color: white;
+    background-color: white;
+}
+.footer-blur{
+    width: 22rem;
+    height: 12rem;
+    /* left: 55rem; */
+    /* top: 2rem; */
+}

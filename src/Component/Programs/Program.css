@@ -1,0 +1,62 @@
+.program{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}
+.program-header{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+
+}.programcars{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 2rem;
+    cursor: pointer;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+
+}
+.cards div:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.cards div:nth-child(3){
+    font-size: 0,9rem;
+    line-height: 25px;
+}
+.cards div:nth-child(4){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.cards:hover{
+    background: var(--plancard);
+}
+@media only screen and (max-width:600px) {
+    .program{
+        gap: 1rem;
+        padding: 2rem;
+    }.program-header{
+        font-size: 2rem;
+        gap: 1rem;
+        text-align: center;
+        flex-direction: column;
+    }.programcars{
+        flex-direction: column;
+    }
+}

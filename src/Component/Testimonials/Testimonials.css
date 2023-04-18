@@ -1,0 +1,124 @@
+.Testimonials{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 2rem;
+}.left-test{
+    flex: 1 1;
+display: flex;
+flex-direction: column;
+font-size: 1rem;
+gap: 2rem;
+text-transform: uppercase;
+color: white;
+}.title{
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 1rem;
+}.left-test :nth-child(2){
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+}.say{
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+.right-test{
+    flex: 1 1;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+}
+.frame{
+    height: 40vh;
+    width: 40%;
+    border:2px solid var(--orange)
+}
+.boxt{
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    /* height: 40vh; */
+    width: 100%;
+    height: 40vh;
+    background:  var(--plancard);
+}.imgt{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    /* height: 40vh; */
+    background-color: brown;
+    animation-name: mov;
+    animation-duration: 1s;
+    /* animation-timing-function: ease; */
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+}
+.imgt img{
+    width: 100%;
+    height: inherit;
+
+
+}
+@keyframes mov {
+    0%{
+        transform:  rotateX(-30) (-10);
+    /* opacity: 2; */
+    }
+    50%{
+        transform: translateX(+30);
+    }
+    100%{
+        transform: translateX(-30);
+    }
+}
+.name1{
+    font-weight: bold;
+    color: var(--orange);
+}.sym{
+    font-size: 30px;
+    color: #6f3535;
+    position: relative;
+    top: 6px;
+}.reviewst{
+   text-transform: none;
+   text-align: justify;
+   letter-spacing: 2px;
+   line-height: 40px;
+}.buton{
+font-size: 3rem;
+font-weight: bolder;
+display: flex;
+gap: 1rem;
+cursor: pointer;
+}.buton span:nth-child(1):hover{
+    color: red;
+}
+.buton span:nth-child(2):hover{
+    color:blue;
+}
+@media only screen and (max-width:600px) {
+/* @media only screen and(max-width:600px){ */
+    .Testimonials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }.right-test{
+        display: flex;
+        flex-direction: column-reverse;
+    }.frame{
+        width: 90%;
+    }.title,.txtop,.say,.reviewst,.name{
+        text-align: center;
+    }
+}
